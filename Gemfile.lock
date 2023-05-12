@@ -1,0 +1,35 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    cgi (0.3.6)
+    erb (4.0.2)
+      cgi (>= 0.3.3)
+    fileutils (1.7.1)
+    json (2.6.3)
+    optimist (3.0.1)
+    optparse (0.3.1)
+    pandocomatic (1.1.0)
+      optimist (~> 3.0.0, >= 3.0.0)
+      paru (~> 1.1, >= 1.1.0)
+    paru (1.1.0)
+    rubyzip (2.3.2)
+    tmpdir (0.1.3)
+      fileutils
+    zip-zip (0.3)
+      rubyzip (>= 1.0.0)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  erb
+  json
+  optparse
+  pandocomatic
+  paru
+  rubyzip (>= 1.0.0)
+  tmpdir
+  zip-zip
+
+BUNDLED WITH
+   2.4.12

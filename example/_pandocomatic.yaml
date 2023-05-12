@@ -1,0 +1,11 @@
+settings:
+  recursive: false
+  follow-links: false
+  skip: ['*.md']
+  data-dir: ./_data-dir
+
+templates:
+  moodlebook:
+    pandoc:
+      template: 'templates/book.html'
+      filter: ['filters/md2moodlebook.rb']

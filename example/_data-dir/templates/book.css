@@ -1,0 +1,15 @@
+
+.new {
+  background-color: #000;
+  color: #ff0;
+  border-radius: 18px;
+  position: relative;
+  top: -2px;
+  display: inline;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 8px;
+  letter-spacing: .3px;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
