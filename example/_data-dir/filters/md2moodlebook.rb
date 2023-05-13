@@ -69,9 +69,7 @@ Paru::Filter.run do
       moodlebook.push page
     end
   end
-  if @ran_before
-    doc << current_node if current_node.parent.is_a? Paru::PandocFilter::Document
-  end
+  doc << current_node if current_node.parent.is_a? Paru::PandocFilter::Document
 end
 
 moodlebook.each_with_index do |doc, index|
