@@ -1,6 +1,6 @@
 # md2book
 
-**md2book** is a straightforward Ruby script designed to convert a markdown file into a self-zipped [Moodle book](https://docs.moodle.org/402/en/Book_resource) resource, which is then ready for upload.
+**md2book** is a straightforward [Pandoc filter](https://pandoc.org/filters.html) written in [Paru](https://github.com/htdebeer/paru) designed to convert a single markdown document into a self-zipped [Moodle book](https://docs.moodle.org/402/en/Book_resource) resource, which is then ready for upload and import as a chapter.
 
 To use this tool, you must have [Ruby](https://www.ruby-lang.org/en/) language programming and [Pandoc](https://pandoc.org/) installed on your system. It should work seamlessly on any GNU/Linux distribution, as well as on WSL2 and MacOS (though I haven't had the opportunity to test it extensively on the latter).
 
