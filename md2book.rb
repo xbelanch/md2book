@@ -111,7 +111,11 @@ printf "%s Markdown input file: #{input_document}\n", Color.info
 
 # 3. Let's do some verifications before the conversion (pandoc, pandocomatic yaml...)
 if ret = check_pandoc()
-  printf "%s Pandoc version: #{ret[:version][0]}.#{ret[:version][1]}.#{ret[:version][2]}\n", Color.info
+  pandoc_version = "#{ret[:version][0]}.#{ret[:version][1]}.#{ret[:version][2]}"
+  printf "%s Pandoc version: #{pandoc_version}\n", Color.info
+  unless Gem::Version.new(pandoc_version) >= Gem::Version.new('3.0.0')
+    raise "Pandoc version #{pandoc_version} is not supported, please upgrade to at least version 3.x.x"
+  end
   printf "%s Pandoc user data dir: #{ret[:data_dir]}\n", Color.info
 end
 
